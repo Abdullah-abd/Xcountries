@@ -11,7 +11,7 @@ function App() {
         const data =await res.json();
         setCountryData(data);
       } catch (error) {
-        console.log("Error fetching data:",error);
+        console.error("Error fetching data:",error);
       }
     }
     getCountriesFlag();
