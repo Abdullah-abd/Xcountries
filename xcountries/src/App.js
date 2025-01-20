@@ -17,7 +17,7 @@ function App() {
         setCountryData(data);
         setAllCountries(data); // Store the full data for reset
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data:", error); // Log error to console
       }
     };
     getCountriesFlag();
@@ -51,12 +51,12 @@ function App() {
   return (
     <div>
       <div className='input-box'>
-      <input
-        type="text"
-        placeholder="Search for countries..."
-        onChange={handleInputChange}
-        className="input"
-      />
+        <input
+          type="text"
+          placeholder="Search for countries..."
+          onChange={handleInputChange}
+          className="input"
+        />
       </div>
       <div className="App">
         {countryData.map((Data) => {
