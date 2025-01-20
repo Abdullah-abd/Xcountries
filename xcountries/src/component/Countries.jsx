@@ -1,10 +1,10 @@
 // Countries Component
 import React from "react";
-import styles from "./Countries.module.css";
+import "./Countries.css";
 
 export default function Countries({Data}) {
   return (
-    <div className={styles.countryCard} data-testid="country-card">
+    <div className="countryCard">
       <div>
         <img
           src={Data.png}
