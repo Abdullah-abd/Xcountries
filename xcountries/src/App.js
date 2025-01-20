@@ -32,7 +32,9 @@ function App() {
       const nameMatch = country.common.toLowerCase().includes(query.toLowerCase());
       return nameMatch;
     });
-    setCountryData(filtered);
+    const sortedFiltered = filtered.sort((a, b) => a.common.localeCompare(b.common));
+
+    setCountryData(sortedFiltered);
   };
 
   const debounceSearch = (event, debounceTimeout) => {
