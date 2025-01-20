@@ -12,7 +12,7 @@ export default function Countries({Data}) {
           style={{ width: "100px", height: "100px",  }}
         />
       </div>
-      <h3>{Data.common}</h3>
+      <h2>{Data.common}</h2>
     </div>
   );
 }
