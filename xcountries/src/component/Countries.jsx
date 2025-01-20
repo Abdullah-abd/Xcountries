@@ -4,7 +4,7 @@ import styles from "./Countries.module.css";
 
 export default function Countries({Data}) {
   return (
-    <div className={styles.countryCard}>
+    <div className={styles.countryCard} data-testid="country-card">
       <div>
         <img
           src={Data.png}
